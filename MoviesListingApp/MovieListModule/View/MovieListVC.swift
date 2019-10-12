@@ -162,6 +162,7 @@ extension MovieListVC : UICollectionViewDelegate, UICollectionViewDataSource, UI
         {
             pageNo += 1;
             apiCallToFetchMoviesListForSearchText(searchText: searchingText, page: pageNo)
+            isLoading = false;
         }
     }
 }
